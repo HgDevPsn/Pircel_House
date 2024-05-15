@@ -21,7 +21,7 @@ const Home: React.FC = () => {
     const fetchHouses = async (filterTerm: string) => {
         setLoading(true);
         try {
-            const response = await fetch(`http://localhost:3001/houses/${filterTerm}`);
+            const response = await fetch(`https://pircelhouseserver-jci6qmyq6-seniorprodevs-projects.vercel.app/houses/${filterTerm}`);
             console.log('filterTerm', response)
             const data = await response.json();
             console.log(data, 'fetched data');
